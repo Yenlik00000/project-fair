@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header a{
+    color:white;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #737477;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info, .form {
+    flex: 1;
+    margin: 1rem;
+}
+
+.info h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.info ul {
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+.info li strong {
+    color: #51545b;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.form input, .form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.form button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #464748;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    /* transition: background-color 0.3s; */
+}
+
+.form button:hover {
+    background-color: #444648;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+}

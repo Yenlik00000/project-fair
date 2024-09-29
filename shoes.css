@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.logo svg{
+    width: 50px;
+    height: 50px;
+}
+.logo h1 {
+    color: #fffafa;
+    padding-top: 15px;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.links li a {
+    color: #968c8c;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.links li a:hover {
+    color: #fffafa;
+}
+
+
+.shoes {
+    background-image: url(images/2024-09-28\ 23.52.50.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff9f9;
+}
+.card{
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+}
+.content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.shop-now {
+    background-color: #ff6f61;
+    color: rgb(250, 246, 246);
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.shop-now:hover {
+    background-color: #94231a;
+}
+
+
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height:200px;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height:40px;
+}
+.buy{
+    background-color: #ff3f31;
+    width: 80px;
+    border-radius: 20px;
+    height:30px ;
+    color: white;
+    font-size: 10px;
+    position: relative;
+    left: 5px;
+}
+.buy:hover{
+    background-color: #7b1c15;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+}
